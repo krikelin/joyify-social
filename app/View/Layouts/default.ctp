@@ -27,6 +27,9 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 		<?php echo $cakeDescription ?>:
 		<?php echo $title_for_layout; ?>
 	</title>
+    <script type="text/javascript">
+        var APPDOMAIN = '<?php echo Configure::read("siteDomain")?>';
+    </script>
 	<?php
 		echo $this->Html->meta('icon');
 
@@ -41,17 +44,20 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
   
 </head>
 <body>
-	<div id="container-fluid">
-		<div class="navbar navbar-inverse">
+		<div class="navbar">
 			<div class="navbar-inner">
-                <ul>
-                    <li> <img src="/img/banner_header.png" style="" /><br /></li>
+                <ul class="nav">
+                    <li> <a href="<?php echo Router::Url('/')?>">Joyify</a></li>
+                    <li><a href="<?php echo Router::Url('/')?>">Home</a></li>
+                    <li><a href="<?php echo Router::Url('/pages/generate')?>">Generate</a></li>
+
                 </ul>
             </div>
 		</div>
-		<div class="row-fluid">
+	<div id="container-fluid">
+		<div class="row-fluid" style="min-height:320px">
             <div class="span2 visible-desktop"></div>
-            <div class="span4 section">
+            <div class="span4">
 
 			    <?php echo $this->fetch('content'); ?>
             </div>
@@ -61,15 +67,18 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
                      <img src="/img/banner.png" style="" /><br />
             </div>
         </div>
-		<div class="footer" id="footer">
+		<div class="footer" style="text-align: center" id="footer">
 			<?php echo $this->Html->link(
 					$this->Html->image('cake.power.gif', array('alt' => $cakeDescription, 'border' => '0')),
 					'http://www.cakephp.org/',
 					array('target' => '_blank', 'escape' => false)
 				);
 			?>
+            <small>Project by <a href="http://wwww.bungahack.com">@drsounds</a></small>
 		</div>
 	</div>
+    <details>
 	<?php echo $this->element('sql_dump'); ?>
+    </details>
 </body>
 </html>

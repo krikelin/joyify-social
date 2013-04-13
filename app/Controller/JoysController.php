@@ -29,6 +29,8 @@ class JoysController extends AppController {
     Allowing for jsonp interaction with widgets.
     **/
     public function rpc() {
+        $this->layout = 'rpc';
+        $this->response->type('application/javascript');
         $status = 200;
         try {
             $url = $this->request->query('url');
@@ -38,9 +40,18 @@ class JoysController extends AppController {
                 'title' => $title,
                 'user_id' => $this->Auth->user('id')
             );
+            $count = $this->Joy->find('count', array(
+                'conditions' => array(
+                    'user_id' => $this->Auth->user('id'),   
+                    'url' => $url
+                )
+            ));
+            if($count > 0)
+            {
+                throw new Exception('Same added twice');
+            }
+               
             $this->Joy->save($data);
-            $this->layout = 'rpc';
-            $this->response->type('application/javascript');
         } catch (Exception $e) {
             $status = 500;
         }

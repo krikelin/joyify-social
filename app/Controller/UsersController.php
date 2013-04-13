@@ -3,7 +3,7 @@
 class UsersController extends AppController {
 
     // app/Controller/UsersController.php
-
+    var $uses = array('Joy', 'User');
     public function beforeFilter() {
         parent::beforeFilter();
         $this->Auth->allow('add'); // Letting users register themselves
@@ -27,12 +27,16 @@ class UsersController extends AppController {
         $this->set('users', $this->paginate());
     }
 
-    public function view($id = null) {
-        $this->User->id = $id;
-        if (!$this->User->exists()) {
-            throw new NotFoundException(__('Invalid user'));
-        }
-        $this->set('user', $this->User->read(null, $id));
+    public function view($user = null) {
+        $users = $this->User->find('first', array('conditions' => array('User.username' => $user)));
+        $user = $users['User'];
+        $joys = $this->Joy->find('all', array(
+            'conditions' => array(
+                'user_id' => $user['id']
+            ), 'orderby' => 'time DESC'));
+        $this->set('joys', $joys);
+        $this->set('user', $user);
+        
     }
 
     public function add() {

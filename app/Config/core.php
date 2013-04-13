@@ -193,10 +193,11 @@
  * the cake shell command: cake schema create Sessions
  *
  */
+    Configure::write('siteDomain', 'joy.com');
 	Configure::write('Session', array(
 		'defaults' => 'php'
 	));
-
+    
 /**
  * A random string used in security hashing methods.
  */

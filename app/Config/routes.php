@@ -30,6 +30,10 @@
 	Router::connect('/widget', array('controller' => 'joys', 'action' => 'widget', 'widget'));
 	Router::connect('/joyify', array('controller' => 'joys', 'action' => 'joyify', ''));
 	Router::connect('/rpc', array('controller' => 'joys', 'action' => 'rpc', ''));
+	Router::connect('/:user',   
+        array('controller' => 'users', 'action' => 'view', ''),
+        array('pass' => array('user'), 'user' => '[a-zA-Z0-9]+')
+    );
 /**
  * ...and connect the rest of 'Pages' controller's urls.
  */

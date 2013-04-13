@@ -1,8 +1,14 @@
 <?php
 // app/Model/User.php
 class User extends AppModel {
-    var $hasMany = array('Joy');
-    public $validate = array(
+    var $hasMany = array('Joy' =>
+        array(
+            'className' => 'Joy',
+            'order' => 'Joy.time DESC',
+            'foreignKey' => 'Joy.user_id'
+        )
+    );
+    public $validate = array( 
         'username' => array(
             'required' => array(
                 'rule' => array('notEmpty'),

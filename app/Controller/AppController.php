@@ -41,6 +41,7 @@ public $components = array(
     );
 
     public function beforeFilter() {
+        $this->set('siteDomain', Configure::read('siteDomain'));
         $this->Auth->allow('index', 'view');
     }
 }

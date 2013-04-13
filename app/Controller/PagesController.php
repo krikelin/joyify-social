@@ -31,6 +31,10 @@ App::uses('AppController', 'Controller');
  */
 class PagesController extends AppController {
 
+    public function beforeFilter() {
+        $this->set('loggedIn', $this->Auth->user('id'));
+        $this->Auth->allow('home', 'display');
+    }
 /**
  * Controller name
  *
@@ -43,7 +47,7 @@ class PagesController extends AppController {
  *
  * @var array
  */
-	public $uses = array();
+	public $uses = array('Joy', 'User');
 
 /**
  * Displays a view
@@ -53,7 +57,11 @@ class PagesController extends AppController {
  */
 	public function display() {
 		$path = func_get_args();
-
+        // Get recent joys
+        $recent_joys = $this->Joy->find('all', array(
+            'conditions' => array(),
+            'limit' => 12, 'order' => 'time DESC'));
+        $this->set('recent_joys', $recent_joys);
 		$count = count($path);
 		if (!$count) {
 			$this->redirect('/');

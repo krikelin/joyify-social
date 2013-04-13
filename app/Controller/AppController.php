@@ -41,7 +41,10 @@ public $components = array(
     );
 
     public function beforeFilter() {
+        $loggedIn = $this->Auth->loggedIn();
+        $this->set('loggedIn', $loggedIn);  
         $this->set('siteDomain', Configure::read('siteDomain'));
         $this->Auth->allow('index', 'view');
+        
     }
 }

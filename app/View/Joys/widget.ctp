@@ -2,7 +2,7 @@
 if(!$loggedIn) {
 ?>
 
-<a target="_popup" href="http://www.<?php echo $siteDomain?>/joyify?url=<?php echo urlencode($url)?>&title=<?php echo urlencode($title);?>"><img src="img/icon.png" style="float: left"/><div class="btn">Joyify this!</div></a> <div id="counter" class="counter"><?php echo $count?></div>
+<a target="_popup" href="http://<?php echo $siteDomain?>/joyify?url=<?php echo urlencode($url)?>&title=<?php echo urlencode($title);?>"><img src="img/icon.png" style="float: left"/><div class="btn">Joyify this!</div></a> <div id="counter" class="counter"><?php echo $count?></div>
 <?php } else { ?>
 <script type="text/javascript"> 
     function joy_rpc_finished(response) {
@@ -14,7 +14,7 @@ if(!$loggedIn) {
     function joyify(title, url) {
         document.querySelector('#result').innerHTML = "Loading..";
         var d = document.createElement('script');
-        d.setAttribute('src', 'http://www.<?php echo $siteDomain ?>/rpc?title=' + encodeURI(title) + '&url=' + encodeURI(url));
+        d.setAttribute('src', 'http://<?php echo $siteDomain ?>/rpc?title=' + encodeURI(title) + '&url=' + encodeURI(url));
         d.setAttribute('type', 'text/javascript');
         document.head.appendChild(d);
     }

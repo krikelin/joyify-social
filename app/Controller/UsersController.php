@@ -6,7 +6,7 @@ class UsersController extends AppController {
     var $uses = array('Joy', 'User');
     public function beforeFilter() {
         parent::beforeFilter();
-        $this->Auth->allow('add'); // Letting users register themselves
+        $this->Auth->allow('index', 'home', 'add'); // Letting users register themselves
     }
 
     public function login() {
@@ -18,7 +18,19 @@ class UsersController extends AppController {
             }
         }
     }
+    public function settings() {
+        if($this->request->is('post')) {
+            $update = array(
+                'id' => $this->Auth->user('id'),
+                'bio' => $this->request->data['bio']
+            );
 
+            $this->User->save($update, false, array('id', 'bio'));
+        }
+        $users = $this->User->find('first', array('conditions' => array('User.id' => $this->Auth->user('id'))));
+        $user = $users['User'];
+        $this->set('user', $user);
+    }
     public function logout() {
         $this->redirect($this->Auth->logout());
     }

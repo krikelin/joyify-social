@@ -50,7 +50,13 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
                     <li> <a href="<?php echo Router::Url('/')?>">Joyify</a></li>
                     <li><a href="<?php echo Router::Url('/')?>">Home</a></li>
                     <li><a href="<?php echo Router::Url('/pages/generate')?>">Generate</a></li>
-
+                    <?php if($loggedIn):?>
+                    <li><a href="<?php echo Router::Url('/users/settings')?>">Settings</a></li>
+                    <li><a href="<?php echo Router::Url('/users/logout')?>">Log out</a></li>
+                    <?php else:?>
+                    <li><a href="<?php echo Router::Url('/users/add')?>">Sign up!</a></li>
+                    <li><a href="<?php echo Router::Url('/users/login')?>">Log in</a></li>
+                    <?php endif; ?>
                 </ul>
             </div>
 		</div>

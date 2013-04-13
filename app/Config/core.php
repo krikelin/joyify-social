@@ -193,7 +193,7 @@
  * the cake shell command: cake schema create Sessions
  *
  */
-    Configure::write('siteDomain', 'joy.com');
+    Configure::write('siteDomain', 'www.joyify.nu');
 	Configure::write('Session', array(
 		'defaults' => 'php'
 	));

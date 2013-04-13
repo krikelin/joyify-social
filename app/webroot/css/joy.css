@@ -6,6 +6,9 @@ body {
 .navbar-inner {
     height: 32px;
 }
+.author {
+    color: #888888;
+}
 * {
      font-family: "Segoe UI";
 }

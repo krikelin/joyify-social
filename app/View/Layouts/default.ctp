@@ -27,6 +27,9 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 		<?php echo $cakeDescription ?>:
 		<?php echo $title_for_layout; ?>
 	</title>
+	<meta name="og:title" content="Joyify" />
+	<meta name="og:description" content="Joyify is a minimal ocial networking site, not to take over the world but to make a minimialistic social networking platform" />
+	<meta name="og:image" content="http://joyify.cobresia.webfactional.com/img/joyify.png" />
     <script type="text/javascript">
         var APPDOMAIN = '<?php echo Configure::read("siteDomain")?>';
     </script>
@@ -80,7 +83,7 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 					array('target' => '_blank', 'escape' => false)
 				);
 			?>
-            <small>Project by <a href="http://wwww.bungahack.com">@drsounds</a></small>
+            <small>Project by <a href="http://www.bungahack.com">@drsounds</a></small>
 		</div>
 	</div>
     <details>

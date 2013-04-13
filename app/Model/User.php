@@ -5,7 +5,7 @@ class User extends AppModel {
         array(
             'className' => 'Joy',
             'order' => 'Joy.time DESC',
-            'foreignKey' => 'Joy.user_id'
+            'foreignKey' => 'user_id'
         )
     );
     public $validate = array( 

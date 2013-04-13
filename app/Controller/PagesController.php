@@ -57,11 +57,18 @@ class PagesController extends AppController {
  */
 	public function display() {
 		$path = func_get_args();
+        $loggedIn = $this->Auth->user('id');
         // Get recent joys
         $recent_joys = $this->Joy->find('all', array(
             'conditions' => array(),
             'limit' => 12, 'order' => 'time DESC'));
         $this->set('recent_joys', $recent_joys);
+        if($loggedIn) {
+            $myjoys = $this->Joy->find('all', array(
+            'conditions' => array('user_id' => $this->Auth->user('id')),
+            'order' => 'time DESC'));
+            $this->set('myjoys', $myjoys);
+        }
 		$count = count($path);
 		if (!$count) {
 			$this->redirect('/');

@@ -45,7 +45,7 @@ class UsersController extends AppController {
         $joys = $this->Joy->find('all', array(
             'conditions' => array(
                 'user_id' => $user['id']
-            ), 'orderby' => 'time DESC'));
+            ),'order' => 'time DESC'));
         $this->set('joys', $joys);
         $this->set('user', $user);
         

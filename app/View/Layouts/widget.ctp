@@ -59,6 +59,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', end
         width: 6px;
         height: 20px;
     }
+        .counter a {
+            text-decoration: none;
+        }
+        .counter a:hover {
+            text-decoration: underline;
+        }
         #label {
             margin-left: 3px;
         }

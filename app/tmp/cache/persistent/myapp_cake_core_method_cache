@@ -1,2 +1,2 @@
-1365937150
+1365938011
 a:2:{s:4:"name";a:10:{s:32:"4e6e7ed11ad71335149abf96aa67d165";s:5:"`joy`";s:32:"47eb7bb09414c64f779510914712b6ee";s:7:"`count`";s:32:"4db4f89f508de674c1f4a6352c879373";s:15:"`Joy`.`user_id`";s:32:"84aed5ca7734df237971a8964bd0217a";s:11:"`User`.`id`";s:32:"2f09c0c0b7675b33d598ba9af1002c06";s:6:"`joys`";s:32:"eb9b37fa6fe3e5c49f921ddcd721b306";s:6:"`User`";s:32:"f94a437fb7858e092079378f93ef2c71";s:7:"`users`";s:32:"61d7330b4e95acd575f02a3b2ee3c73a";s:5:"`url`";s:32:"857406e2028cd3783bb8904a19cc0110";s:5:"`Joy`";s:32:"322115c6be8b9535c3319bd4f238f540";s:9:"`user_id`";}s:6:"fields";a:1:{s:32:"713648e805c6350d28f9e01cfd6da702";a:1:{i:0;s:19:"COUNT(*) AS `count`";}}}

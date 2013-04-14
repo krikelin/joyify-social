@@ -1,4 +1,5 @@
 joy_rpc_finished({
-    status: <?php echo $status?>,   
-    joyified: <?php echo $joyified ?>
+    code: <?php echo $status['code']?>,   
+    status: '<?php echo $status['status']?>',
+    result: '<?php echo $status['result'] ?>'
 });

@@ -3488,3 +3488,43 @@ Stack Trace:
 #12 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(JoysController), Object(CakeRequest), Object(CakeResponse))
 #13 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #14 {main}
+2013-04-14 11:04:04 Error: Fatal Error (4): syntax error, unexpected ';', expecting ')' in [C:\Users\alex\Documents\joy\app\Controller\JoysController.php, line 181]
+2013-04-14 11:04:04 Error: [FatalErrorException] syntax error, unexpected ';', expecting ')'
+Request URL: /widget?title=a&url=http%3A%2F%2Fwww.svt.se
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\alex\D...', 181)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\alex\D...', 181, Array)
+#2 C:\Users\alex\Documents\joy\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\alex\D...', 181, Array)
+#3 C:\Users\alex\Documents\joy\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-14 11:04:38 Error: Fatal Error (4): syntax error, unexpected ';', expecting ')' in [C:\Users\alex\Documents\joy\app\Controller\JoysController.php, line 181]
+2013-04-14 11:04:38 Error: [FatalErrorException] syntax error, unexpected ';', expecting ')'
+Request URL: /widget?title=a&url=http%3A%2F%2Fwww.svt.se
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\alex\D...', 181)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\alex\D...', 181, Array)
+#2 C:\Users\alex\Documents\joy\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\alex\D...', 181, Array)
+#3 C:\Users\alex\Documents\joy\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-14 11:05:18 Error: Fatal Error (4): syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')' in [C:\Users\alex\Documents\joy\app\Controller\JoysController.php, line 182]
+2013-04-14 11:05:18 Error: [FatalErrorException] syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')'
+Request URL: /widget?title=a&url=http%3A%2F%2Fwww.svt.se
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\alex\D...', 182)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\alex\D...', 182, Array)
+#2 C:\Users\alex\Documents\joy\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\alex\D...', 182, Array)
+#3 C:\Users\alex\Documents\joy\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-14 11:05:19 Error: Fatal Error (4): syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')' in [C:\Users\alex\Documents\joy\app\Controller\JoysController.php, line 182]
+2013-04-14 11:05:19 Error: [FatalErrorException] syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')'
+Request URL: /widget?title=a&url=http%3A%2F%2Fwww.svt.se
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\alex\D...', 182)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\alex\D...', 182, Array)
+#2 C:\Users\alex\Documents\joy\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\alex\D...', 182, Array)
+#3 C:\Users\alex\Documents\joy\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

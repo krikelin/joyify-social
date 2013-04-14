@@ -160,7 +160,7 @@ class JoysController extends AppController {
     public function rpc() {
         $this->layout = 'rpc';
         $this->response->type('application/javascript');
-        $status = 200;
+        $status = array('code' => 200, 'status' => 'OK', 'result' => 'undefined');
         try {
             $url = urldecode($this->request->query('url'));
             $title = urldecode($this->request->query('title'));
@@ -177,7 +177,13 @@ class JoysController extends AppController {
             ));
             if($count > 0)
             {
-                throw new Exception('Same added twice');
+                $this->Joy->deleteAll(array(
+                    'user_id' => $this->Auth->user('id'),
+                    'url' => $url
+                ));
+                $status['result'] = 'unjoyified';
+                $this->set('status', $status);
+                return;
             }
             // Get open graph properties
             $html = file_get_contents($url);
@@ -188,7 +194,7 @@ class JoysController extends AppController {
             $xpath = new DOMXPath($doc);
             $query = '//*/meta[starts-with(@property, \'og:\')]';
             $metas = $xpath->query($query);
-        
+            $rmetas = Array();
             foreach ($metas as $meta) {
                 $property = $meta->getAttribute('property');
                 $content = $meta->getAttribute('content');
@@ -204,8 +210,9 @@ class JoysController extends AppController {
                 $data['title'] = $rmetas['og:title'];
             }
             $this->Joy->save($data);
+            $status['result'] = 'joyified';
         } catch (Exception $e) {
-            $status = 500;
+            $status['code'] = 500;
         }
         $this->set('status', $status);
        

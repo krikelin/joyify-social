@@ -22,6 +22,7 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="http://oexchange.org/spec/0.8/rel/related-target" type="application/xrd+xml" href="http://joyify.cobresia.webfactional.com/oexchange.xrd"/>
 	<?php echo $this->Html->charset(); ?>
 	<title>
 		<?php echo $cakeDescription ?>:

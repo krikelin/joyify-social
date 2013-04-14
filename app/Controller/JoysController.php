@@ -11,8 +11,8 @@ class JoysController extends AppController {
     public function index() {
     }
     public function joyify() {
-        $url = $this->request->query('url');
-        $title = $this->request->query('title');
+        $url = urldecode($this->request->query('url'));
+        $title = urldecode($this->request->query('title'));
         if ($this->request->is('post')) {
             
             try {
@@ -70,6 +70,7 @@ class JoysController extends AppController {
             } catch (Exception $e) {
                 $status = 500;
             }
+            die('c');
             $this->redirect('/');
         } else {
             $this->set('url', $url);
@@ -89,7 +90,6 @@ class JoysController extends AppController {
         $this->set('count', $countJoys);
         $you = $this->Joy->find('count', array('conditions' => array('url' => $url, 'user_id' => $this->Auth->user('id'))));    
         $this->set('you', $you > 0);  
-        $this->render('widget_joy');
     }   
     public function submit() {
         if ($this->request->is('post')) {
@@ -162,8 +162,8 @@ class JoysController extends AppController {
         $this->response->type('application/javascript');
         $status = 200;
         try {
-            $url = $this->request->query('url');
-            $title = $this->request->query('title');
+            $url = urldecode($this->request->query('url'));
+            $title = urldecode($this->request->query('title'));
             $data = array(
                 'url' => $url,
                 'title' => $title,

@@ -3528,3 +3528,1625 @@ Stack Trace:
 #3 C:\Users\alex\Documents\joy\lib\Cake\Core\App.php(899): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2013-04-14 12:03:59 Error: [MissingActionException] Action PlayerController::a() could not be found.
+Exception Attributes: array (
+  'controller' => 'PlayerController',
+  'action' => 'a',
+)
+Request URL: /player/a
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(PlayerController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-04-14 12:04:03 Error: [MissingViewException] View file "C:\Users\alex\Documents\joy\app\View\Player\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\Users\\alex\\Documents\\joy\\app\\View\\Player\\index.ctp',
+)
+Request URL: /player/index
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\Users\alex\Documents\joy\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#2 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(PlayerController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-04-14 12:05:39 Error: Fatal Error (4): syntax error, unexpected T_ENDIF in [C:\Users\alex\Documents\joy\app\View\Layouts\player.ctp, line 56]
+2013-04-14 12:05:39 Error: [FatalErrorException] syntax error, unexpected T_ENDIF
+Request URL: /player/index
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\alex\D...', 56)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\alex\D...', 56, Array)
+#2 C:\Users\alex\Documents\joy\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\alex\D...', 56, Array)
+#3 C:\Users\alex\Documents\joy\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-14 12:06:55 Error: Fatal Error (4): syntax error, unexpected T_ENCAPSED_AND_WHITESPACE, expecting ')' in [C:\Users\alex\Documents\joy\app\View\Player\index.ctp, line 1]
+2013-04-14 12:06:55 Error: [FatalErrorException] syntax error, unexpected T_ENCAPSED_AND_WHITESPACE, expecting ')'
+Request URL: /player/index
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\alex\D...', 1)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\alex\D...', 1, Array)
+#2 C:\Users\alex\Documents\joy\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\alex\D...', 1, Array)
+#3 C:\Users\alex\Documents\joy\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-14 12:07:02 Error: [MissingActionException] Action PlayerController::base() could not be found.
+Exception Attributes: array (
+  'controller' => 'PlayerController',
+  'action' => 'base',
+)
+Request URL: /Player/base
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(PlayerController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-04-14 12:07:40 Error: [MissingControllerException] Controller class AudioController could not be found.
+Exception Attributes: array (
+  'class' => 'AudioController',
+  'plugin' => NULL,
+)
+Request URL: /audio/base
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-14 12:07:59 Error: [MissingControllerException] Controller class AudioController could not be found.
+Exception Attributes: array (
+  'class' => 'AudioController',
+  'plugin' => NULL,
+)
+Request URL: /audio/base
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-14 15:00:55 Error: [MissingViewException] View file "C:\Users\alex\Documents\joy\app\View\Users\tunes.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\Users\\alex\\Documents\\joy\\app\\View\\Users\\tunes.ctp',
+)
+Request URL: /users/tunes
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\Users\alex\Documents\joy\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#2 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-04-14 15:06:42 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE in [C:\Users\alex\Documents\joy\app\Controller\UsersController.php, line 12]
+2013-04-14 15:06:42 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE
+Request URL: /users/tunes
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\alex\D...', 12)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\alex\D...', 12, Array)
+#2 C:\Users\alex\Documents\joy\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\alex\D...', 12, Array)
+#3 C:\Users\alex\Documents\joy\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-14 15:06:44 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\Users\alex\Documents\joy\app\Controller\UsersController.php, line 12]
+2013-04-14 15:06:44 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /users/tunes
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\Users\alex\D...', 12)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\Users\alex\D...', 12, Array)
+#2 C:\Users\alex\Documents\joy\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\Users\alex\D...', 12, Array)
+#3 C:\Users\alex\Documents\joy\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-14 15:06:51 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\Users\alex\Documents\joy\app\Controller\UsersController.php, line 12]
+2013-04-14 15:06:51 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /users/tunes
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\Users\alex\D...', 12)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\Users\alex\D...', 12, Array)
+#2 C:\Users\alex\Documents\joy\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\Users\alex\D...', 12, Array)
+#3 C:\Users\alex\Documents\joy\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-14 15:06:52 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\Users\alex\Documents\joy\app\Controller\UsersController.php, line 12]
+2013-04-14 15:06:52 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /users/tunes
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\Users\alex\D...', 12)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\Users\alex\D...', 12, Array)
+#2 C:\Users\alex\Documents\joy\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\Users\alex\D...', 12, Array)
+#3 C:\Users\alex\Documents\joy\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-14 15:07:00 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\Users\alex\Documents\joy\app\Controller\UsersController.php, line 12]
+2013-04-14 15:07:00 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /users/tunes
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\Users\alex\D...', 12)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\Users\alex\D...', 12, Array)
+#2 C:\Users\alex\Documents\joy\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\Users\alex\D...', 12, Array)
+#3 C:\Users\alex\Documents\joy\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-14 15:07:29 Error: Fatal Error (4): syntax error, unexpected ';' in [C:\Users\alex\Documents\joy\app\Controller\UsersController.php, line 12]
+2013-04-14 15:07:29 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /users/tunes
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\alex\D...', 12)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\alex\D...', 12, Array)
+#2 C:\Users\alex\Documents\joy\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\alex\D...', 12, Array)
+#3 C:\Users\alex\Documents\joy\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-14 15:07:35 Error: Fatal Error (1): Call to undefined method View::elements() in [C:\Users\alex\Documents\joy\app\View\Users\tunes.ctp, line 4]
+2013-04-14 15:07:35 Error: [FatalErrorException] Call to undefined method View::elements()
+Request URL: /users/tunes
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\Users\alex\D...', 4)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\Users\alex\D...', 4, Array)
+#2 C:\Users\alex\Documents\joy\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\Users\alex\D...', 4, Array)
+#3 C:\Users\alex\Documents\joy\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-14 15:27:01 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Level.level' in 'on clause'
+Request URL: /users/tunes
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\alex\Documents\joy\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `Tune`.`...', Array)
+#2 C:\Users\alex\Documents\joy\lib\Cake\Model\Datasource\DboSource.php(670): DboSource->execute('SELECT `Tune`.`...', Array, Array)
+#3 C:\Users\alex\Documents\joy\lib\Cake\Model\Datasource\DboSource.php(1081): DboSource->fetchAll('SELECT `Tune`.`...', false)
+#4 C:\Users\alex\Documents\joy\lib\Cake\Model\Model.php(2694): DboSource->read(Object(Tune), Array)
+#5 C:\Users\alex\Documents\joy\app\Controller\UsersController.php(12): Model->find('all', Array)
+#6 [internal function]: UsersController->tunes()
+#7 C:\Users\alex\Documents\joy\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#8 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-04-14 15:27:48 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Level.level' in 'on clause'
+Request URL: /users/tunes
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\alex\Documents\joy\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `Tune`.`...', Array)
+#2 C:\Users\alex\Documents\joy\lib\Cake\Model\Datasource\DboSource.php(670): DboSource->execute('SELECT `Tune`.`...', Array, Array)
+#3 C:\Users\alex\Documents\joy\lib\Cake\Model\Datasource\DboSource.php(1081): DboSource->fetchAll('SELECT `Tune`.`...', false)
+#4 C:\Users\alex\Documents\joy\lib\Cake\Model\Model.php(2694): DboSource->read(Object(Tune), Array)
+#5 C:\Users\alex\Documents\joy\app\Controller\UsersController.php(12): Model->find('all', Array)
+#6 [internal function]: UsersController->tunes()
+#7 C:\Users\alex\Documents\joy\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#8 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-04-14 15:28:12 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Level.level' in 'on clause'
+Request URL: /users/tunes
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\alex\Documents\joy\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `Tune`.`...', Array)
+#2 C:\Users\alex\Documents\joy\lib\Cake\Model\Datasource\DboSource.php(670): DboSource->execute('SELECT `Tune`.`...', Array, Array)
+#3 C:\Users\alex\Documents\joy\lib\Cake\Model\Datasource\DboSource.php(1081): DboSource->fetchAll('SELECT `Tune`.`...', false)
+#4 C:\Users\alex\Documents\joy\lib\Cake\Model\Model.php(2694): DboSource->read(Object(Tune), Array)
+#5 C:\Users\alex\Documents\joy\app\Controller\UsersController.php(12): Model->find('all', Array)
+#6 [internal function]: UsersController->tunes()
+#7 C:\Users\alex\Documents\joy\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#8 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-04-14 15:28:16 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Level.level' in 'on clause'
+Request URL: /users/tunes
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\alex\Documents\joy\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `Tune`.`...', Array)
+#2 C:\Users\alex\Documents\joy\lib\Cake\Model\Datasource\DboSource.php(670): DboSource->execute('SELECT `Tune`.`...', Array, Array)
+#3 C:\Users\alex\Documents\joy\lib\Cake\Model\Datasource\DboSource.php(1081): DboSource->fetchAll('SELECT `Tune`.`...', false)
+#4 C:\Users\alex\Documents\joy\lib\Cake\Model\Model.php(2694): DboSource->read(Object(Tune), Array)
+#5 C:\Users\alex\Documents\joy\app\Controller\UsersController.php(12): Model->find('all', Array)
+#6 [internal function]: UsersController->tunes()
+#7 C:\Users\alex\Documents\joy\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#8 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-04-14 15:28:30 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Level.level' in 'on clause'
+Request URL: /users/tunes
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\alex\Documents\joy\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `Tune`.`...', Array)
+#2 C:\Users\alex\Documents\joy\lib\Cake\Model\Datasource\DboSource.php(670): DboSource->execute('SELECT `Tune`.`...', Array, Array)
+#3 C:\Users\alex\Documents\joy\lib\Cake\Model\Datasource\DboSource.php(1081): DboSource->fetchAll('SELECT `Tune`.`...', false)
+#4 C:\Users\alex\Documents\joy\lib\Cake\Model\Model.php(2694): DboSource->read(Object(Tune), Array)
+#5 C:\Users\alex\Documents\joy\app\Controller\UsersController.php(12): Model->find('all', Array)
+#6 [internal function]: UsersController->tunes()
+#7 C:\Users\alex\Documents\joy\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#8 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-04-14 15:36:01 Error: [MissingHelperException] Helper class InputHelper could not be found.
+Exception Attributes: array (
+  'class' => 'InputHelper',
+  'plugin' => false,
+)
+Request URL: /tunes/submit
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('Input')
+#1 C:\Users\alex\Documents\joy\lib\Cake\View\View.php(835): HelperCollection->__isset('Input')
+#2 C:\Users\alex\Documents\joy\app\View\Tunes\submit.ctp(4): View->__get('Input')
+#3 C:\Users\alex\Documents\joy\lib\Cake\View\View.php(947): include('C:\Users\alex\D...')
+#4 C:\Users\alex\Documents\joy\lib\Cake\View\View.php(909): View->_evaluate('C:\Users\alex\D...', Array)
+#5 C:\Users\alex\Documents\joy\lib\Cake\View\View.php(471): View->_render('C:\Users\alex\D...')
+#6 C:\Users\alex\Documents\joy\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#7 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#8 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(TunesController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-04-14 15:41:28 Error: Fatal Error (1): Call to a member function is() on a non-object in [C:\Users\alex\Documents\joy\app\Controller\TunesController.php, line 6]
+2013-04-14 15:41:28 Error: [FatalErrorException] Call to a member function is() on a non-object
+Request URL: /tunes/submit
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\Users\alex\D...', 6)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\Users\alex\D...', 6, Array)
+#2 C:\Users\alex\Documents\joy\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\Users\alex\D...', 6, Array)
+#3 C:\Users\alex\Documents\joy\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-14 15:41:37 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'title' doesn't have a default value
+Request URL: /tunes/submit
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\alex\Documents\joy\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('INSERT INTO `jo...', Array)
+#2 C:\Users\alex\Documents\joy\lib\Cake\Model\Datasource\DboSource.php(1008): DboSource->execute('INSERT INTO `jo...')
+#3 C:\Users\alex\Documents\joy\lib\Cake\Model\Model.php(1742): DboSource->create(Object(Tune), Array, Array)
+#4 C:\Users\alex\Documents\joy\app\Controller\TunesController.php(9): Model->save(Array, false, Array)
+#5 [internal function]: TunesController->submit()
+#6 C:\Users\alex\Documents\joy\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(TunesController), Array)
+#7 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(TunesController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-04-14 15:41:47 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'title' doesn't have a default value
+Request URL: /tunes/submit
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\alex\Documents\joy\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('INSERT INTO `jo...', Array)
+#2 C:\Users\alex\Documents\joy\lib\Cake\Model\Datasource\DboSource.php(1008): DboSource->execute('INSERT INTO `jo...')
+#3 C:\Users\alex\Documents\joy\lib\Cake\Model\Model.php(1742): DboSource->create(Object(Tune), Array, Array)
+#4 C:\Users\alex\Documents\joy\app\Controller\TunesController.php(9): Model->save(Array, false, Array)
+#5 [internal function]: TunesController->submit()
+#6 C:\Users\alex\Documents\joy\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(TunesController), Array)
+#7 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(TunesController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-04-14 15:42:05 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'title' doesn't have a default value
+Request URL: /tunes/submit
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\alex\Documents\joy\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('INSERT INTO `jo...', Array)
+#2 C:\Users\alex\Documents\joy\lib\Cake\Model\Datasource\DboSource.php(1008): DboSource->execute('INSERT INTO `jo...')
+#3 C:\Users\alex\Documents\joy\lib\Cake\Model\Model.php(1742): DboSource->create(Object(Tune), Array, Array)
+#4 C:\Users\alex\Documents\joy\app\Controller\TunesController.php(9): Model->save(Array, false, Array)
+#5 [internal function]: TunesController->submit()
+#6 C:\Users\alex\Documents\joy\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(TunesController), Array)
+#7 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(TunesController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-04-14 15:42:43 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'streamUrl' doesn't have a default value
+Request URL: /tunes/submit
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\alex\Documents\joy\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('INSERT INTO `jo...', Array)
+#2 C:\Users\alex\Documents\joy\lib\Cake\Model\Datasource\DboSource.php(1008): DboSource->execute('INSERT INTO `jo...')
+#3 C:\Users\alex\Documents\joy\lib\Cake\Model\Model.php(1742): DboSource->create(Object(Tune), Array, Array)
+#4 C:\Users\alex\Documents\joy\app\Controller\TunesController.php(9): Model->save(Array, false, Array)
+#5 [internal function]: TunesController->submit()
+#6 C:\Users\alex\Documents\joy\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(TunesController), Array)
+#7 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(TunesController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-04-14 15:43:01 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'youtube_id' doesn't have a default value
+Request URL: /tunes/submit
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\alex\Documents\joy\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('INSERT INTO `jo...', Array)
+#2 C:\Users\alex\Documents\joy\lib\Cake\Model\Datasource\DboSource.php(1008): DboSource->execute('INSERT INTO `jo...')
+#3 C:\Users\alex\Documents\joy\lib\Cake\Model\Model.php(1742): DboSource->create(Object(Tune), Array, Array)
+#4 C:\Users\alex\Documents\joy\app\Controller\TunesController.php(10): Model->save(Array, false, Array)
+#5 [internal function]: TunesController->submit()
+#6 C:\Users\alex\Documents\joy\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(TunesController), Array)
+#7 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(TunesController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-04-14 15:43:11 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'youtube_id' doesn't have a default value
+Request URL: /tunes/submit
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\alex\Documents\joy\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('INSERT INTO `jo...', Array)
+#2 C:\Users\alex\Documents\joy\lib\Cake\Model\Datasource\DboSource.php(1008): DboSource->execute('INSERT INTO `jo...')
+#3 C:\Users\alex\Documents\joy\lib\Cake\Model\Model.php(1742): DboSource->create(Object(Tune), Array, Array)
+#4 C:\Users\alex\Documents\joy\app\Controller\TunesController.php(10): Model->save(Array, false, Array)
+#5 [internal function]: TunesController->submit()
+#6 C:\Users\alex\Documents\joy\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(TunesController), Array)
+#7 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(TunesController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-04-14 15:45:49 Error: Fatal Error (4): syntax error, unexpected ';', expecting ']' in [C:\Users\alex\Documents\joy\app\Controller\TunesController.php, line 11]
+2013-04-14 15:45:49 Error: [FatalErrorException] syntax error, unexpected ';', expecting ']'
+Request URL: /tunes/submit
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\alex\D...', 11)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\alex\D...', 11, Array)
+#2 C:\Users\alex\Documents\joy\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\alex\D...', 11, Array)
+#3 C:\Users\alex\Documents\joy\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-14 15:48:00 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\Users\alex\Documents\joy\app\Controller\AccountController.php, line 10]
+2013-04-14 15:48:00 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /account/tunes
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\Users\alex\D...', 10)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\Users\alex\D...', 10, Array)
+#2 C:\Users\alex\Documents\joy\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\Users\alex\D...', 10, Array)
+#3 C:\Users\alex\Documents\joy\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-14 15:48:28 Error: [MissingActionException] Action UsersController::tunes() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'tunes',
+)
+Request URL: /users/tunes
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-04-14 15:48:40 Error: [MissingActionException] Action UsersController::tunes() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'tunes',
+)
+Request URL: /users/tunes
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-04-14 15:48:44 Error: [MissingActionException] Action TunesController::1advance() could not be found.
+Exception Attributes: array (
+  'controller' => 'TunesController',
+  'action' => '1advance',
+)
+Request URL: /tunes/1advance
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(TunesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-04-14 15:49:02 Error: [MissingActionException] Action TunesController::1() could not be found.
+Exception Attributes: array (
+  'controller' => 'TunesController',
+  'action' => '1',
+)
+Request URL: /tunes/1/advance
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(TunesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-04-14 15:49:24 Error: [MissingActionException] Action TunesController::advance() could not be found.
+Exception Attributes: array (
+  'controller' => 'TunesController',
+  'action' => 'advance',
+)
+Request URL: /tunes/advance/1/
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(TunesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-04-14 15:51:31 Error: [MissingActionException] Action TunesController::1() could not be found.
+Exception Attributes: array (
+  'controller' => 'TunesController',
+  'action' => '1',
+)
+Request URL: /tunes/1
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(TunesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-04-14 15:51:34 Error: [MissingActionException] Action TunesController::1() could not be found.
+Exception Attributes: array (
+  'controller' => 'TunesController',
+  'action' => '1',
+)
+Request URL: /tunes/1
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(TunesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-04-14 15:51:35 Error: [MissingActionException] Action TunesController::1() could not be found.
+Exception Attributes: array (
+  'controller' => 'TunesController',
+  'action' => '1',
+)
+Request URL: /tunes/1
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(TunesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-04-14 15:51:41 Error: [MissingViewException] View file "C:\Users\alex\Documents\joy\app\View\Tunes\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\Users\\alex\\Documents\\joy\\app\\View\\Tunes\\index.ctp',
+)
+Request URL: /tunes/index/1
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\Users\alex\Documents\joy\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#2 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(TunesController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-04-14 15:51:46 Error: [MissingViewException] View file "C:\Users\alex\Documents\joy\app\View\Tunes\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\Users\\alex\\Documents\\joy\\app\\View\\Tunes\\index.ctp',
+)
+Request URL: /tunes/index/1
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\Users\alex\Documents\joy\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#2 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(TunesController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-04-14 15:51:59 Error: [MissingActionException] Action TunesController::1() could not be found.
+Exception Attributes: array (
+  'controller' => 'TunesController',
+  'action' => '1',
+)
+Request URL: /tunes/1
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(TunesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-04-14 15:52:13 Error: [MissingViewException] View file "C:\Users\alex\Documents\joy\app\View\Tunes\view.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\Users\\alex\\Documents\\joy\\app\\View\\Tunes\\view.ctp',
+)
+Request URL: /tunes/view/1
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\Users\alex\Documents\joy\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#2 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(TunesController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-04-14 15:53:26 Error: Fatal Error (4): syntax error, unexpected '=', expecting ')' in [C:\Users\alex\Documents\joy\app\View\Tunes\view.ctp, line 1]
+2013-04-14 15:53:26 Error: [FatalErrorException] syntax error, unexpected '=', expecting ')'
+Request URL: /tunes/view/1
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\alex\D...', 1)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\alex\D...', 1, Array)
+#2 C:\Users\alex\Documents\joy\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\alex\D...', 1, Array)
+#3 C:\Users\alex\Documents\joy\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-14 15:55:37 Error: [MissingActionException] Action TunesController::advance() could not be found.
+Exception Attributes: array (
+  'controller' => 'TunesController',
+  'action' => 'advance',
+)
+Request URL: /tunes/advance/1/
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(TunesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-04-15 06:48:49 Error: Fatal Error (64): Cannot redeclare AccountController::$uses in [C:\Users\alex\Documents\joy\app\Controller\AccountController.php, line 5]
+2013-04-15 06:48:49 Error: [FatalErrorException] Cannot redeclare AccountController::$uses
+Request URL: /account/login
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', 'C:\Users\alex\D...', 5)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', 'C:\Users\alex\D...', 5, Array)
+#2 C:\Users\alex\Documents\joy\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', 'C:\Users\alex\D...', 5, Array)
+#3 C:\Users\alex\Documents\joy\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-15 06:48:56 Error: [MissingActionException] Action UsersController::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+)
+Request URL: /users/login
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-04-15 06:49:27 Error: [MissingActionException] Action UsersController::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+)
+Request URL: /users/login
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-04-15 06:49:28 Error: [MissingActionException] Action UsersController::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+)
+Request URL: /users/login
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-04-15 06:49:34 Error: [MissingActionException] Action UsersController::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+)
+Request URL: /users/login
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-04-15 06:50:15 Error: [MissingActionException] Action UsersController::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+)
+Request URL: /users/login
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-04-15 06:50:20 Error: [MissingActionException] Action UsersController::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+)
+Request URL: /users/login
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-04-15 06:51:53 Error: [MissingActionException] Action UsersController::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+)
+Request URL: /users/login
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-04-15 06:53:07 Error: [MissingActionException] Action UsersController::settings() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'settings',
+)
+Request URL: /users/settings
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-04-15 06:53:08 Error: [MissingActionException] Action UsersController::logout() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'logout',
+)
+Request URL: /users/logout
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-04-15 06:53:47 Error: [MissingActionException] Action UsersController::settings() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'settings',
+)
+Request URL: /users/settings
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-04-15 06:53:54 Error: [MissingActionException] Action AccountController::home() could not be found.
+Exception Attributes: array (
+  'controller' => 'AccountController',
+  'action' => 'home',
+)
+Request URL: /account/home
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AccountController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-04-15 06:53:56 Error: [MissingActionException] Action UsersController::view() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'view',
+)
+Request URL: /accounthome
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-04-15 06:53:57 Error: [MissingActionException] Action UsersController::view() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'view',
+)
+Request URL: /account
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-04-15 06:54:02 Error: [MissingActionException] Action UsersController::view() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'view',
+)
+Request URL: /a
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-04-15 06:56:13 Error: [MissingTableException] Table aquativitities for model Aquativity was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'aquativitities',
+  'class' => 'Aquativity',
+  'ds' => 'default',
+)
+Request URL: /account/aquativity
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Model\Model.php(3237): Model->setSource('aquativitities')
+#1 C:\Users\alex\Documents\joy\lib\Cake\Model\Model.php(2694): Model->getDataSource()
+#2 C:\Users\alex\Documents\joy\app\Controller\AccountController.php(32): Model->find('all', Array)
+#3 [internal function]: AccountController->aquativity()
+#4 C:\Users\alex\Documents\joy\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(AccountController), Array)
+#5 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#6 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AccountController), Object(CakeRequest), Object(CakeResponse))
+#7 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2013-04-15 06:57:15 Error: [MissingTableException] Table aquativitities for model Aquativity was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'aquativitities',
+  'class' => 'Aquativity',
+  'ds' => 'default',
+)
+Request URL: /account/aquativity
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Model\Model.php(3237): Model->setSource('aquativitities')
+#1 C:\Users\alex\Documents\joy\lib\Cake\Model\Model.php(2694): Model->getDataSource()
+#2 C:\Users\alex\Documents\joy\app\Controller\AccountController.php(32): Model->find('all', Array)
+#3 [internal function]: AccountController->aquativity()
+#4 C:\Users\alex\Documents\joy\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(AccountController), Array)
+#5 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#6 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AccountController), Object(CakeRequest), Object(CakeResponse))
+#7 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2013-04-15 06:57:16 Error: [MissingTableException] Table aquativitities for model Aquativity was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'aquativitities',
+  'class' => 'Aquativity',
+  'ds' => 'default',
+)
+Request URL: /account/aquativity
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Model\Model.php(3237): Model->setSource('aquativitities')
+#1 C:\Users\alex\Documents\joy\lib\Cake\Model\Model.php(2694): Model->getDataSource()
+#2 C:\Users\alex\Documents\joy\app\Controller\AccountController.php(32): Model->find('all', Array)
+#3 [internal function]: AccountController->aquativity()
+#4 C:\Users\alex\Documents\joy\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(AccountController), Array)
+#5 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#6 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AccountController), Object(CakeRequest), Object(CakeResponse))
+#7 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2013-04-15 06:57:48 Error: [MissingTableException] Table aquativitities for model Aquativity was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'aquativitities',
+  'class' => 'Aquativity',
+  'ds' => 'default',
+)
+Request URL: /account/aquativity
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Model\Model.php(3237): Model->setSource('aquativitities')
+#1 C:\Users\alex\Documents\joy\lib\Cake\Model\Model.php(2694): Model->getDataSource()
+#2 C:\Users\alex\Documents\joy\app\Controller\AccountController.php(32): Model->find('all', Array)
+#3 [internal function]: AccountController->aquativity()
+#4 C:\Users\alex\Documents\joy\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(AccountController), Array)
+#5 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#6 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AccountController), Object(CakeRequest), Object(CakeResponse))
+#7 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2013-04-15 06:57:48 Error: [MissingTableException] Table aquativitities for model Aquativity was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'aquativitities',
+  'class' => 'Aquativity',
+  'ds' => 'default',
+)
+Request URL: /account/aquativity
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Model\Model.php(3237): Model->setSource('aquativitities')
+#1 C:\Users\alex\Documents\joy\lib\Cake\Model\Model.php(2694): Model->getDataSource()
+#2 C:\Users\alex\Documents\joy\app\Controller\AccountController.php(32): Model->find('all', Array)
+#3 [internal function]: AccountController->aquativity()
+#4 C:\Users\alex\Documents\joy\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(AccountController), Array)
+#5 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#6 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AccountController), Object(CakeRequest), Object(CakeResponse))
+#7 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2013-04-15 11:34:37 Error: [MissingActionException] Action UsersController::add() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'add',
+)
+Request URL: /users/add
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-04-15 11:35:16 Error: [MissingActionException] Action UsersController::add() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'add',
+)
+Request URL: /users/add
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-04-15 11:36:40 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/joy.css
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-15 11:36:42 Error: [MissingActionException] Action UsersController::add() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'add',
+)
+Request URL: /users/add
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-04-15 11:36:43 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/joy.css
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-15 11:36:43 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/joy.css
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-15 11:36:44 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/joy.css
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-15 11:36:46 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/joy.css
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-15 11:36:47 Error: [MissingActionException] Action UsersController::add() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'add',
+)
+Request URL: /users/add
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-04-15 11:36:47 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/joy.css
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-15 11:36:48 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/joy.css
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-15 11:36:51 Error: [MissingActionException] Action UsersController::add() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'add',
+)
+Request URL: /users/add
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-04-15 11:36:51 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/joy.css
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-15 11:36:52 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/joy.css
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-15 11:37:30 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/joy.css
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-15 11:37:38 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/joy.css
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-15 11:37:38 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/joy.css
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-15 11:37:39 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/joy.css
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-15 11:37:40 Error: [MissingActionException] Action UsersController::add() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'add',
+)
+Request URL: /users/add
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-04-15 11:37:40 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/joy.css
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-15 11:38:02 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/joy.css
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-15 11:38:02 Error: [MissingActionException] Action UsersController::add() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'add',
+)
+Request URL: /users/add
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-04-15 11:38:02 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/joy.css
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-15 11:38:05 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/joy.css
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-15 11:38:06 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/joy.css
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-15 11:38:09 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/joy.css
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-15 11:38:10 Error: [MissingActionException] Action UsersController::add() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'add',
+)
+Request URL: /users/add
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-04-15 11:38:10 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/joy.css
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-15 11:38:53 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/joy.css
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-15 11:38:56 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/joy.css
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-15 11:38:59 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/joy.css
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-15 11:39:00 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/joy.css
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-15 11:39:02 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/joy.css
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-15 11:41:57 Error: [MissingActionException] Action AquativitiesController::add() could not be found.
+Exception Attributes: array (
+  'controller' => 'AquativitiesController',
+  'action' => 'add',
+)
+Request URL: /aquativities/add
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AquativitiesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-04-15 11:42:36 Error: Fatal Error (4): syntax error, unexpected '{' in [C:\Users\alex\Documents\joy\app\Controller\AquativitiesController.php, line 5]
+2013-04-15 11:42:36 Error: [FatalErrorException] syntax error, unexpected '{'
+Request URL: /aquativities/add
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\alex\D...', 5)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\alex\D...', 5, Array)
+#2 C:\Users\alex\Documents\joy\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\alex\D...', 5, Array)
+#3 C:\Users\alex\Documents\joy\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-15 11:42:41 Error: [MissingViewException] View file "C:\Users\alex\Documents\joy\app\View\Aquativities\add.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\Users\\alex\\Documents\\joy\\app\\View\\Aquativities\\add.ctp',
+)
+Request URL: /aquativities/add
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\Users\alex\Documents\joy\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#2 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AquativitiesController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-04-15 11:43:21 Error: [MissingViewException] View file "C:\Users\alex\Documents\joy\app\View\Aquativities\add.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\Users\\alex\\Documents\\joy\\app\\View\\Aquativities\\add.ctp',
+)
+Request URL: /aquativities/add
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\Users\alex\Documents\joy\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#2 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AquativitiesController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-04-15 11:51:40 Error: Fatal Error (4): syntax error, unexpected '{' in [C:\Users\alex\Documents\joy\app\Controller\AquativitiesController.php, line 7]
+2013-04-15 11:51:40 Error: [FatalErrorException] syntax error, unexpected '{'
+Request URL: /aquativities/add
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\alex\D...', 7)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\alex\D...', 7, Array)
+#2 C:\Users\alex\Documents\joy\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\alex\D...', 7, Array)
+#3 C:\Users\alex\Documents\joy\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-15 11:52:10 Error: Fatal Error (1): Call to undefined method AquativitiesController::setFlash() in [C:\Users\alex\Documents\joy\app\Controller\AquativitiesController.php, line 11]
+2013-04-15 11:52:10 Error: [FatalErrorException] Call to undefined method AquativitiesController::setFlash()
+Request URL: /aquativities/add
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\Users\alex\D...', 11)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\Users\alex\D...', 11, Array)
+#2 C:\Users\alex\Documents\joy\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\Users\alex\D...', 11, Array)
+#3 C:\Users\alex\Documents\joy\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-15 11:53:24 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'user_id' doesn't have a default value
+Request URL: /aquativities/add
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\alex\Documents\joy\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('INSERT INTO `jo...', Array)
+#2 C:\Users\alex\Documents\joy\lib\Cake\Model\Datasource\DboSource.php(1008): DboSource->execute('INSERT INTO `jo...')
+#3 C:\Users\alex\Documents\joy\lib\Cake\Model\Model.php(1742): DboSource->create(Object(Aquativity), Array, Array)
+#4 C:\Users\alex\Documents\joy\app\Controller\AquativitiesController.php(7): Model->save(Array, false, Array)
+#5 [internal function]: AquativitiesController->add()
+#6 C:\Users\alex\Documents\joy\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(AquativitiesController), Array)
+#7 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AquativitiesController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-04-15 11:53:57 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'user_id' doesn't have a default value
+Request URL: /aquativities/add
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\alex\Documents\joy\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('INSERT INTO `jo...', Array)
+#2 C:\Users\alex\Documents\joy\lib\Cake\Model\Datasource\DboSource.php(1008): DboSource->execute('INSERT INTO `jo...')
+#3 C:\Users\alex\Documents\joy\lib\Cake\Model\Model.php(1742): DboSource->create(Object(Aquativity), Array, Array)
+#4 C:\Users\alex\Documents\joy\app\Controller\AquativitiesController.php(9): Model->save(Array, false, Array)
+#5 [internal function]: AquativitiesController->add()
+#6 C:\Users\alex\Documents\joy\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(AquativitiesController), Array)
+#7 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AquativitiesController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-04-15 11:54:07 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'time' doesn't have a default value
+Request URL: /aquativities/add
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\alex\Documents\joy\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('INSERT INTO `jo...', Array)
+#2 C:\Users\alex\Documents\joy\lib\Cake\Model\Datasource\DboSource.php(1008): DboSource->execute('INSERT INTO `jo...')
+#3 C:\Users\alex\Documents\joy\lib\Cake\Model\Model.php(1742): DboSource->create(Object(Aquativity), Array, Array)
+#4 C:\Users\alex\Documents\joy\app\Controller\AquativitiesController.php(9): Model->save(Array, false, Array)
+#5 [internal function]: AquativitiesController->add()
+#6 C:\Users\alex\Documents\joy\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(AquativitiesController), Array)
+#7 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AquativitiesController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-04-15 11:54:12 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'description' doesn't have a default value
+Request URL: /aquativities/add
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\alex\Documents\joy\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('INSERT INTO `jo...', Array)
+#2 C:\Users\alex\Documents\joy\lib\Cake\Model\Datasource\DboSource.php(1008): DboSource->execute('INSERT INTO `jo...')
+#3 C:\Users\alex\Documents\joy\lib\Cake\Model\Model.php(1742): DboSource->create(Object(Aquativity), Array, Array)
+#4 C:\Users\alex\Documents\joy\app\Controller\AquativitiesController.php(9): Model->save(Array, false, Array)
+#5 [internal function]: AquativitiesController->add()
+#6 C:\Users\alex\Documents\joy\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(AquativitiesController), Array)
+#7 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AquativitiesController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-04-15 11:56:52 Error: Fatal Error (4): syntax error, unexpected $end in [C:\Users\alex\Documents\joy\app\View\Account\aquativity.ctp, line 10]
+2013-04-15 11:56:52 Error: [FatalErrorException] syntax error, unexpected $end
+Request URL: /Account/Aquativity
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\alex\D...', 10)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\alex\D...', 10, Array)
+#2 C:\Users\alex\Documents\joy\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\alex\D...', 10, Array)
+#3 C:\Users\alex\Documents\joy\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-15 11:56:59 Error: Fatal Error (4): syntax error, unexpected '[', expecting ',' or ';' in [C:\Users\alex\Documents\joy\app\View\Elements\aquativity.ctp, line 3]
+2013-04-15 11:56:59 Error: [FatalErrorException] syntax error, unexpected '[', expecting ',' or ';'
+Request URL: /Account/Aquativity
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\alex\D...', 3)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\alex\D...', 3, Array)
+#2 C:\Users\alex\Documents\joy\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\alex\D...', 3, Array)
+#3 C:\Users\alex\Documents\joy\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-15 11:57:23 Error: Fatal Error (4): syntax error, unexpected '[' in [C:\Users\alex\Documents\joy\app\View\Elements\aquativity.ctp, line 4]
+2013-04-15 11:57:23 Error: [FatalErrorException] syntax error, unexpected '['
+Request URL: /Account/Aquativity
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\alex\D...', 4)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\alex\D...', 4, Array)
+#2 C:\Users\alex\Documents\joy\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\alex\D...', 4, Array)
+#3 C:\Users\alex\Documents\joy\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-15 12:00:43 Error: Fatal Error (4): syntax error, unexpected $end in [C:\Users\alex\Documents\joy\app\View\Elements\aquativity.ctp, line 11]
+2013-04-15 12:00:43 Error: [FatalErrorException] syntax error, unexpected $end
+Request URL: /account/aquativity
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\alex\D...', 11)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\alex\D...', 11, Array)
+#2 C:\Users\alex\Documents\joy\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\alex\D...', 11, Array)
+#3 C:\Users\alex\Documents\joy\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-15 12:01:54 Error: [MissingActionException] Action AquativitiesController::delete() could not be found.
+Exception Attributes: array (
+  'controller' => 'AquativitiesController',
+  'action' => 'delete',
+)
+Request URL: /aquativities/delete/1
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AquativitiesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-04-15 12:04:01 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'strikes' cannot be null
+Request URL: /aquativities/add
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\alex\Documents\joy\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('INSERT INTO `jo...', Array)
+#2 C:\Users\alex\Documents\joy\lib\Cake\Model\Datasource\DboSource.php(1008): DboSource->execute('INSERT INTO `jo...')
+#3 C:\Users\alex\Documents\joy\lib\Cake\Model\Model.php(1742): DboSource->create(Object(Aquativity), Array, Array)
+#4 C:\Users\alex\Documents\joy\app\Controller\AquativitiesController.php(10): Model->save(Array, false, Array)
+#5 [internal function]: AquativitiesController->add()
+#6 C:\Users\alex\Documents\joy\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(AquativitiesController), Array)
+#7 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AquativitiesController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-04-15 12:04:53 Error: [MissingActionException] Action AquativitiesController::delete() could not be found.
+Exception Attributes: array (
+  'controller' => 'AquativitiesController',
+  'action' => 'delete',
+)
+Request URL: /aquativities/delete/1
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AquativitiesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-04-15 12:10:09 Error: Fatal Error (1): Call to undefined function random() in [C:\Users\alex\Documents\joy\app\Controller\AquativitiesController.php, line 10]
+2013-04-15 12:10:09 Error: [FatalErrorException] Call to undefined function random()
+Request URL: /aquativities/add
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\Users\alex\D...', 10)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\Users\alex\D...', 10, Array)
+#2 C:\Users\alex\Documents\joy\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\Users\alex\D...', 10, Array)
+#3 C:\Users\alex\Documents\joy\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-15 12:11:13 Error: [MissingViewException] View file "C:\Users\alex\Documents\joy\app\View\Aquativities\view.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\Users\\alex\\Documents\\joy\\app\\View\\Aquativities\\view.ctp',
+)
+Request URL: /aquativities/view/d5224db3dadf422dec93cbf91e183249
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\Users\alex\Documents\joy\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#2 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AquativitiesController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-04-15 12:21:32 Error: [MissingActionException] Action UsersController::settings() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'settings',
+)
+Request URL: /users/settings
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-04-15 12:22:43 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+Request URL: /account/settings
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\alex\Documents\joy\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('update', Array)
+#2 C:\Users\alex\Documents\joy\lib\Cake\Model\Datasource\DboSource.php(670): DboSource->execute('update', Array, Array)
+#3 C:\Users\alex\Documents\joy\lib\Cake\Model\Datasource\DboSource.php(612): DboSource->fetchAll('update', Array, Array)
+#4 C:\Users\alex\Documents\joy\lib\Cake\Model\Model.php(800): DboSource->query('update', Array, Object(User))
+#5 C:\Users\alex\Documents\joy\app\Controller\AccountController.php(42): Model->__call('update', Array)
+#6 C:\Users\alex\Documents\joy\app\Controller\AccountController.php(42): User->update(Array, false, Array)
+#7 [internal function]: AccountController->settings()
+#8 C:\Users\alex\Documents\joy\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(AccountController), Array)
+#9 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AccountController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2013-04-15 16:43:35 Error: Fatal Error (4): syntax error, unexpected T_ENDIF in [C:\Users\alex\Documents\joy\app\View\Pages\home.ctp, line 5]
+2013-04-15 16:43:35 Error: [FatalErrorException] syntax error, unexpected T_ENDIF
+Request URL: /
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\alex\D...', 5)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\alex\D...', 5, Array)
+#2 C:\Users\alex\Documents\joy\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\alex\D...', 5, Array)
+#3 C:\Users\alex\Documents\joy\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-15 16:43:36 Error: Fatal Error (4): syntax error, unexpected T_ENDIF in [C:\Users\alex\Documents\joy\app\View\Pages\home.ctp, line 5]
+2013-04-15 16:43:36 Error: [FatalErrorException] syntax error, unexpected T_ENDIF
+Request URL: /
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\alex\D...', 5)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\alex\D...', 5, Array)
+#2 C:\Users\alex\Documents\joy\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\alex\D...', 5, Array)
+#3 C:\Users\alex\Documents\joy\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-15 17:27:20 Error: [MissingActionException] Action AccountController::signup() could not be found.
+Exception Attributes: array (
+  'controller' => 'AccountController',
+  'action' => 'signup',
+)
+Request URL: /account/signup
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AccountController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-04-15 17:27:22 Error: [MissingActionException] Action UsersController::add() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'add',
+)
+Request URL: /users/add
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-04-15 17:34:59 Error: [MissingActionException] Action UsersController::add() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'add',
+)
+Request URL: /users/add
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-04-15 17:35:01 Error: [MissingActionException] Action UsersController::add() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'add',
+)
+Request URL: /users/add
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-04-15 17:35:03 Error: [MissingActionException] Action UsersController::add() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'add',
+)
+Request URL: /users/add
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-04-15 17:36:38 Error: [MissingActionException] Action UsersController::add() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'add',
+)
+Request URL: /users/add
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-04-15 20:23:22 Error: [MissingActionException] Action UsersController::add() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'add',
+)
+Request URL: /users/add
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-04-15 20:23:36 Error: [MissingActionException] Action UsersController::add() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'add',
+)
+Request URL: /users/add
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-04-15 20:23:43 Error: [MissingActionException] Action UsersController::add() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'add',
+)
+Request URL: /users/add
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-04-15 20:24:28 Error: [MissingActionException] Action UsersController::add() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'add',
+)
+Request URL: /users/add
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-04-15 20:24:29 Error: [MissingActionException] Action UsersController::add() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'add',
+)
+Request URL: /users/add
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-04-15 20:24:30 Error: [MissingActionException] Action UsersController::add() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'add',
+)
+Request URL: /users/add
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-04-15 20:24:30 Error: [MissingActionException] Action UsersController::add() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'add',
+)
+Request URL: /users/add
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-04-15 20:25:31 Error: [MissingActionException] Action UsersController::add() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'add',
+)
+Request URL: /users/add
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-04-15 20:40:05 Error: Fatal Error (4): syntax error, unexpected T_ENDIF in [C:\Users\alex\Documents\joy\app\View\Elements\aquativity-table.ctp, line 12]
+2013-04-15 20:40:05 Error: [FatalErrorException] syntax error, unexpected T_ENDIF
+Request URL: /account/aquativity
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\alex\D...', 12)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\alex\D...', 12, Array)
+#2 C:\Users\alex\Documents\joy\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\alex\D...', 12, Array)
+#3 C:\Users\alex\Documents\joy\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-15 20:49:44 Error: [MissingActionException] Action AccountController::joys() could not be found.
+Exception Attributes: array (
+  'controller' => 'AccountController',
+  'action' => 'joys',
+)
+Request URL: /account/joys
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AccountController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-04-15 20:50:46 Error: [MissingActionException] Action AccountController::home() could not be found.
+Exception Attributes: array (
+  'controller' => 'AccountController',
+  'action' => 'home',
+)
+Request URL: /account/home
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AccountController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-04-15 20:50:49 Error: [MissingActionException] Action AccountController::home() could not be found.
+Exception Attributes: array (
+  'controller' => 'AccountController',
+  'action' => 'home',
+)
+Request URL: /account/home
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AccountController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-04-15 20:54:51 Error: Fatal Error (4): syntax error, unexpected $end in [C:\Users\alex\Documents\joy\app\View\Elements\joy.ctp, line 12]
+2013-04-15 20:54:51 Error: [FatalErrorException] syntax error, unexpected $end
+Request URL: /account/joys
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\alex\D...', 12)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\alex\D...', 12, Array)
+#2 C:\Users\alex\Documents\joy\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\alex\D...', 12, Array)
+#3 C:\Users\alex\Documents\joy\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-15 20:59:05 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'token' doesn't have a default value
+Request URL: /joys/submit
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\alex\Documents\joy\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('INSERT INTO `jo...', Array)
+#2 C:\Users\alex\Documents\joy\lib\Cake\Model\Datasource\DboSource.php(1008): DboSource->execute('INSERT INTO `jo...')
+#3 C:\Users\alex\Documents\joy\lib\Cake\Model\Model.php(1742): DboSource->create(Object(Joy), Array, Array)
+#4 C:\Users\alex\Documents\joy\app\Controller\JoysController.php(150): Model->save(Array)
+#5 [internal function]: JoysController->submit()
+#6 C:\Users\alex\Documents\joy\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(JoysController), Array)
+#7 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(JoysController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-04-15 21:07:25 Error: [MissingActionException] Action JoysController::click() could not be found.
+Exception Attributes: array (
+  'controller' => 'JoysController',
+  'action' => 'click',
+)
+Request URL: /joys/click/1
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(JoysController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-04-15 21:14:54 Error: Fatal Error (4): syntax error, unexpected T_DOUBLE_ARROW in [C:\Users\alex\Documents\joy\app\Controller\AccountController.php, line 12]
+2013-04-15 21:14:54 Error: [FatalErrorException] syntax error, unexpected T_DOUBLE_ARROW
+Request URL: /account/joys
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\alex\D...', 12)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\alex\D...', 12, Array)
+#2 C:\Users\alex\Documents\joy\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\alex\D...', 12, Array)
+#3 C:\Users\alex\Documents\joy\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-15 21:15:52 Error: [MissingActionException] Action UsersController::view() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'view',
+)
+Request URL: /drsounds
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-04-15 21:16:19 Error: [MissingViewException] View file "C:\Users\alex\Documents\joy\app\View\Users\view.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\Users\\alex\\Documents\\joy\\app\\View\\Users\\view.ctp',
+)
+Request URL: /drsounds
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\Users\alex\Documents\joy\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#2 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-04-15 21:16:39 Error: [MissingViewException] View file "C:\Users\alex\Documents\joy\app\View\Users\view.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\Users\\alex\\Documents\\joy\\app\\View\\Users\\view.ctp',
+)
+Request URL: /drsounds
+Stack Trace:
+#0 C:\Users\alex\Documents\joy\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\Users\alex\Documents\joy\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#2 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\Users\alex\Documents\joy\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Users\alex\Documents\joy\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}

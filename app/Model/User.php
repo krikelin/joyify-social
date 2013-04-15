@@ -1,12 +1,19 @@
 <?php
 // app/Model/User.php
 class User extends AppModel {
-    var $hasMany = array('Joy' =>
-        array(
-            'className' => 'Joy',
-            'order' => 'Joy.time DESC',
-            'foreignKey' => 'user_id'
-        )
+    var $hasMany = array(
+        'Joy' =>
+            array(
+                'className' => 'Joy',
+                'order' => 'Joy.time DESC',
+                'foreignKey' => 'user_id'
+            ),
+        'Tune' => 
+            array(
+                'className' => 'Tune',
+                'order' => 'upload_time DESC',
+                'foreign_key' => 'user_id'
+            )
     );
     public $validate = array( 
         'username' => array(

@@ -14,13 +14,13 @@ if(!$loggedIn) {
             if(response.result == 'joyified') {
                 console.log(response);
                 document.getElementById('button').classList.add('joyified');
-                var count = parseInt(document.getElementById('counter').innerHTML);
+                var count = parseInt(document.getElementById('counter').firstChild.innerHTML);
                 document.getElementById('counter').innerHTML = count + 1;
              }
              if(response.result == 'unjoyified') {
                 console.log(response);
                 document.getElementById('button').classList.remove('joyified');
-                var count = parseInt(document.getElementById('counter').innerHTML);
+                var count = parseInt(document.getElementById('counter').firstChild.innerHTML);
                 document.getElementById('counter').innerHTML = count - 1;
              }
         }

@@ -90,7 +90,12 @@ class JoysController extends AppController {
         $this->set('count', $countJoys);
         $you = $this->Joy->find('count', array('conditions' => array('url' => $url, 'user_id' => $this->Auth->user('id'))));    
         $this->set('you', $you > 0);  
-    }   
+    }       
+    public function click($token) {
+        $joy = $this->Joy->find('first', array('conditions' => array('token' => $token)));
+        $this->Joy->updateAll(array('clicks' => $joy['Joy']['clicks'] + 1));
+        $this->redirect($joy['Joy']['url']);
+    }
     public function submit() {
         if ($this->request->is('post')) {
             
@@ -146,11 +151,12 @@ class JoysController extends AppController {
                 if(array_key_exists('og:title', $rmetas)) {
                     $data['title'] = $rmetas['og:title'];
                 }       
+                $data['token'] = md5($data['title'].date('Ymd H:i:s'));
                 // die(print_r($data));
                 $this->Joy->save($data);
             } catch (Exception $e) {
             }
-            $this->redirect('/');
+            $this->redirect('/account/joys');
         }
     }
     /**
@@ -185,29 +191,32 @@ class JoysController extends AppController {
                 $this->set('status', $status);
                 return;
             }
-            // Get open graph properties
-            $html = file_get_contents($url);
-            libxml_use_internal_errors(true); // Yeah if you are so worried about using @ with warnings
-            $doc = new DomDocument();
-            
-            $doc->loadHTML($html);
-            $xpath = new DOMXPath($doc);
-            $query = '//*/meta[starts-with(@property, \'og:\')]';
-            $metas = $xpath->query($query);
-            $rmetas = Array();
-            foreach ($metas as $meta) {
-                $property = $meta->getAttribute('property');
-                $content = $meta->getAttribute('content');
-                $rmetas[$property] = $content;
-            }
-            if(array_key_exists('og:image', $rmetas)) {
-                $data['image'] = $rmetas['og:image'];
-            }
-            if(array_key_exists('og:description', $rmetas)) {
-                $data['description'] = $rmetas['og:description'];
-            }      
-            if(array_key_exists('og:title', $rmetas)) {
-                $data['title'] = $rmetas['og:title'];
+            try {
+                // Get open graph properties
+                $html = file_get_contents($url);
+                libxml_use_internal_errors(true); // Yeah if you are so worried about using @ with warnings
+                $doc = new DomDocument();
+                
+                $doc->loadHTML($html);
+                $xpath = new DOMXPath($doc);
+                $query = '//*/meta[starts-with(@property, \'og:\')]';
+                $metas = $xpath->query($query);
+                $rmetas = Array();
+                foreach ($metas as $meta) {
+                    $property = $meta->getAttribute('property');
+                    $content = $meta->getAttribute('content');
+                    $rmetas[$property] = $content;
+                }
+                if(array_key_exists('og:image', $rmetas)) {
+                    $data['image'] = $rmetas['og:image'];
+                }
+                if(array_key_exists('og:description', $rmetas)) {
+                    $data['description'] = $rmetas['og:description'];
+                }      
+                if(array_key_exists('og:title', $rmetas)) {
+                    $data['title'] = $rmetas['og:title'];
+                }
+            } catch(Exception $e) {
             }
             $this->Joy->save($data);
             $status['result'] = 'joyified';

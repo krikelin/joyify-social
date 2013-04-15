@@ -9,6 +9,29 @@ body {
 .author {
     color: #888888;
 }
+.joyify td {
+    
+    background: #77a800;
+    color: #FFFFFF;
+    margin: 20px;
+    text-align: center;
+}
+.entry {
+    padding: 8px;
+    border: 1px solid #aaaaaa;  
+    background: #FAFAFA;
+    margin-top: 20px;
+}
+.joyify {
+    border-collapse: seperate;
+    border-spacing: 12px;
+}
+.joyify a {
+    text-shadow: none;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;    
+}
 * {
      font-family: "Segoe UI";
 }
@@ -22,4 +45,14 @@ body {
 }
 label, input, textarea {
     display: block;
+}
+
+.well, .page {
+}
+.page { 
+    padding: 20px;
+    border: 1px solid #eeeeee;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, .1);
+    border-radius: 4px;
 }

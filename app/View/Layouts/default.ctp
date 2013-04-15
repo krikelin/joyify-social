@@ -48,26 +48,13 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
   
 </head>
 <body>
-		<div class="navbar">
-			<div class="navbar-inner">
-                <ul class="nav">
-                    <li> <a href="<?php echo Router::Url('/')?>">Joyify</a></li>
-                    <li><a href="<?php echo Router::Url('/')?>">Home</a></li>
-                    <li><a href="<?php echo Router::Url('/pages/generate')?>">Generate</a></li>
-                    <?php if($loggedIn):?>
-                    <li><a href="<?php echo Router::Url('/users/settings')?>">Settings</a></li>
-                    <li><a href="<?php echo Router::Url('/users/logout')?>">Log out</a></li>
-                    <?php else:?>
-                    <li><a href="<?php echo Router::Url('/users/add')?>">Sign up!</a></li>
-                    <li><a href="<?php echo Router::Url('/users/login')?>">Log in</a></li>
-                    <?php endif; ?>
-                </ul>
-            </div>
-		</div>
+		<div id="container-fluid">
+
+		<?php echo $this->element('menu');?>
 	<div id="container-fluid">
 		<div class="row-fluid" style="min-height:320px">
             <div class="span2 visible-desktop"></div>
-            <div class="span4">
+            <div class="span6 page">
 
 			    <?php echo $this->fetch('content'); ?>
             </div>
@@ -90,5 +77,6 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
     <details>
 	<?php echo $this->element('sql_dump'); ?>
     </details>
+   
 </body>
 </html>

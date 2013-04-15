@@ -28,6 +28,10 @@
  */
 	Router::connect('/', array('controller' => 'pages', 'action' => 'display', 'home'));
 	Router::connect('/widget', array('controller' => 'joys', 'action' => 'widget', 'widget'));
+	Router::connect('/logout', array('controller' => 'account', 'action' => 'logout', ''));
+	Router::connect('/login', array('controller' => 'account', 'action' => 'login', ''));
+	Router::connect('/signup', array('controller' => 'account', 'action' => 'add', ''));
+	Router::connect('/register', array('controller' => 'account', 'action' => 'add', ''));
 	Router::connect('/joyify', array('controller' => 'joys', 'action' => 'joyify', ''));
 	Router::connect('/rpc', array('controller' => 'joys', 'action' => 'rpc', ''));
 	Router::connect('/:user',   

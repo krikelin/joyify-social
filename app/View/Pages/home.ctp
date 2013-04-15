@@ -1,32 +1,32 @@
-<?php 
-if($loggedIn):
-?>
-<h1>Home</h1>
-<h3>My latest Joy</h3>
-<?php echo $this->Form->create('Joy', array('url' => '/joys/submit'))?>
-<?php echo $this->Form->input('url');?>
-<?php echo $this->Form->submit('Publish');?>
-
-<?php foreach($myjoys as $joy): ?>
-<article class="joy">
-    <?php echo $this->Html->link($joy['Joy']['title'], $joy['Joy']['url'])?> <?php echo $this->Html->link($joy['User']['username'], "/".$joy['User']['username'], array('class' => 'author'))?>
-</article>
-<?php
-endforeach;
-?>
-<?php
-else:
-?>
-<h1>Welcome to Joyify</h1>
-<p>Joyify is a experimental social networking site, not aiming to take over the world, but to demonstrate my capabilities of making great web sites</p>
-<h3>Recent Joyed things</h3>
-<?php foreach($recent_joys as $joy): ?>
-<article class="joy">
-    <?php echo $this->Html->link($joy['Joy']['title'], $joy['Joy']['url'])?> <?php echo $this->Html->link($joy['User']['username'], "/".$joy['User']['username'], array('class' => 'author'))?>
-</article>
-<?php
-endforeach;
-?>
-<?php
-endif;
-?>
+<div class="row-fluid">
+    <div class="span12 hero-unit">
+        <h1>Welcome to Joyify</h1>
+        <p>Innovative service for musicians, Aqua Joggers and social people</p>
+    </div>
+</div>
+<div class="row-fluid">
+    <div class="span4 page">
+        <h3>Aquativity tracker</h3>   
+        <p>For Aqua Joggers</p>
+    
+    </div>
+    <div class="span4 page">
+        <h3>Five step promotion</h3>   
+        <p>For musicians</p>
+    
+    </div>
+    <div class="span4 page">
+        <h3>Latest joyed</h3>   
+        <table>
+            <tbody>
+                <?php foreach($joys as $joy):?>
+                <tr>
+                    <td><?php echo $joy['Joy']['time']?></td>
+                    <td><?php echo $this->Html->link($joy['Joy']['title'], '/joys/click/'.$joy['Joy']['token'])?></td>
+                </tr>
+                <?php endforeach; ?>
+            </tbody>
+        </table>
+    
+    </div>
+</div>

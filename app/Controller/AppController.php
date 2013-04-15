@@ -36,11 +36,12 @@ public $components = array(
         'Session',
         'Auth' => array(
             'loginRedirect' => array('controller' => 'posts', 'action' => 'index'),
-            'logoutRedirect' => array('controller' => 'pages', 'action' => 'display', 'home')
+            'logoutRedirect' => array('controller' => 'account', 'action' => 'display', 'home')
         )
     );
 
     public function beforeFilter() {
+        $this->Auth->loginAction = array('controller' => 'account', 'action' => 'login');
         $loggedIn = $this->Auth->loggedIn();
         $this->set('loggedIn', $loggedIn);  
         $this->set('siteDomain', Configure::read('siteDomain'));
